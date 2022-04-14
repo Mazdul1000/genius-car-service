@@ -1,0 +1,39 @@
+.services{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-title{
+    text-align: center;
+    font-size: 46px;
+    margin: 50px 0;
+}
+.services-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 0 50px;
+  
+}
+
+@media only screen and (min-width:578px) {
+  .services-container{
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .service{
+    
+  }
+}
+
+
+@media  only screen and (min-width:1268px) {
+  .services-container{
+    grid-template-columns: repeat(3, 1fr);
+    
+   
+  } 
+  
+  
+}
